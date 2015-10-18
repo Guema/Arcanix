@@ -29,4 +29,10 @@ public class Unit : MonoBehaviour {
     {
 	
 	}
+
+    //Called every frame in editor
+    void OnDrawGizmos()
+    {
+
+    }
 }
