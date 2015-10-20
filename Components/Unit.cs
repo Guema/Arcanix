@@ -5,6 +5,7 @@ using System.Collections;
 [DisallowMultipleComponent]
 public class Unit : MonoBehaviour {
 
+    public LimitedValue Health = new LimitedValue(0, 0, 100);
     [SerializeField]
     string faction;
     [SerializeField]
