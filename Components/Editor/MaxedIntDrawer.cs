@@ -41,6 +41,7 @@ public class MaxedIntDrawer : PropertyDrawer
 [CanEditMultipleObjects]
 public class DefaultEditor : Editor
 {
+
 }
 
 [CustomPropertyDrawer(typeof(MaxedInt))]
@@ -50,5 +51,6 @@ public class MaxedIntDrawer : PropertyDrawer
     {
         position.height = 0;
         EditorGUILayout.LabelField("noob");
+        
     }
 }
