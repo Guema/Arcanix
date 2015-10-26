@@ -3,15 +3,15 @@ using System.Collections;
 
 [SelectionBase]
 [DisallowMultipleComponent]
+[ExecuteInEditMode]
 public class Unit : MonoBehaviour {
 
-    public LimitedValue Health = new LimitedValue(0, 0, 100);
     [SerializeField]
     string faction;
     [SerializeField]
-    int maxHeath = 100;
+    MaxedInt health = new MaxedInt(0, 100);
     [SerializeField]
-    int health;
+    int mr;
 
     // This function is called on Component Placement/Replacement
     void Reset()

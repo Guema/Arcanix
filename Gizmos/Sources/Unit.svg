@@ -17,7 +17,7 @@
    version="1.1"
    inkscape:version="0.91 r13725"
    sodipodi:docname="Unit.svg"
-   inkscape:export-filename="G:\dungeonbrawler\DungeonBrawler\Assets\arcanix-unity-components\Gizmos\Unit.png"
+   inkscape:export-filename="G:\dungeonbrawler\DungeonBrawler\Assets\Arcanix\Gizmos\Unit.png"
    inkscape:export-xdpi="45"
    inkscape:export-ydpi="45">
   <sodipodi:namedview
@@ -36,7 +36,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="7.7339804"
-     inkscape:cx="45.640855"
+     inkscape:cx="25.599428"
      inkscape:cy="12.165885"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -46,7 +46,14 @@
      inkscape:window-height="1017"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
-     inkscape:window-maximized="1" />
+     inkscape:window-maximized="1">
+    <sodipodi:guide
+       position="32.195582,25.989"
+       orientation="0.70710678,0.70710678"
+       id="guide4160"
+       inkscape:label=""
+       inkscape:color="rgb(0,0,255)" />
+  </sodipodi:namedview>
   <defs
      id="defs4">
     <linearGradient
@@ -162,10 +169,10 @@
        inkscape:collect="always"
        xlink:href="#linearGradient6903"
        id="linearGradient6909"
-       x1="22.300596"
-       y1="26.148127"
-       x2="50.552841"
-       y2="54.981922"
+       x1="32.195583"
+       y1="38.011002"
+       x2="51.411266"
+       y2="57.226685"
        gradientUnits="userSpaceOnUse" />
   </defs>
   <metadata
@@ -176,7 +183,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
