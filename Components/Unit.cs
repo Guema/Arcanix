@@ -4,14 +4,18 @@ using System.Collections;
 [SelectionBase]
 [DisallowMultipleComponent]
 [ExecuteInEditMode]
-public class Unit : MonoBehaviour {
-
+public class Unit : MonoBehaviour
+{    
     [SerializeField]
     string faction;
     [SerializeField]
-    MaxedInt health = new MaxedInt(0, 100);
+    bool canNotDie;
     [SerializeField]
-    int mr;
+    bool isDied;
+    [SerializeField]
+    MaxedInt health = new MaxedInt();
+    [SerializeField]
+    MaxedInt speed = new MaxedInt();
 
     // This function is called on Component Placement/Replacement
     void Reset()
@@ -35,5 +39,10 @@ public class Unit : MonoBehaviour {
     void OnDrawGizmos()
     {
 
+    }
+
+    public int GetSpeed()
+    {
+        return speed.Value;
     }
 }
