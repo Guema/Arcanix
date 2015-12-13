@@ -4,10 +4,9 @@ using System.Collections;
 [System.Serializable]
 public class MaxedInt : PropertyAttribute
 {
-    [SerializeField]
     int value;
     [SerializeField]
-    int max = 100;
+    int max;
     
     public int Value
     {
@@ -52,13 +51,10 @@ public class MaxedInt : PropertyAttribute
     }
 
     /// <summary>
-    /// Builder
+    /// Create an int bounded between 0 and the parameter's value
     /// </summary>
-    /// <param name="v">Init value.</param>
-    /// <param name="m">Max value. Value will be limited to it</param>
-    public MaxedInt(int v, int m = 100)
+    public MaxedInt()
     {
-        Value = v;
-        max = m;
+
     }
 }

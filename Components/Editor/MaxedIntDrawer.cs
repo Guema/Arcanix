@@ -37,12 +37,14 @@ public class MaxedIntDrawer : PropertyDrawer
 }
 */
 
+/*
 [CustomEditor(typeof(Unit))]
 [CanEditMultipleObjects]
 public class DefaultEditor : Editor
 {
 
 }
+
 
 [CustomPropertyDrawer(typeof(MaxedInt))]
 public class MaxedIntDrawer : PropertyDrawer
@@ -54,3 +56,4 @@ public class MaxedIntDrawer : PropertyDrawer
         
     }
 }
+*/
