@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="64"
+   height="64"
+   viewBox="0 0 64.000001 64.000001"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="Arcanix.svg"
+   inkscape:export-filename="G:\dungeonbrawler\DungeonBrawler\Assets\Arcanix\Gizmos\Arcanix.png"
+   inkscape:export-xdpi="720"
+   inkscape:export-ydpi="720">
+  <sodipodi:namedview
+     inkscape:snap-page="true"
+     inkscape:snap-midpoints="false"
+     inkscape:snap-smooth-nodes="false"
+     inkscape:object-nodes="false"
+     inkscape:snap-intersection-paths="false"
+     inkscape:object-paths="false"
+     inkscape:guide-bbox="true"
+     showguides="true"
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="7.7339804"
+     inkscape:cx="40.916769"
+     inkscape:cy="34.70342"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer2"
+     showgrid="true"
+     units="px"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1">
+    <sodipodi:guide
+       position="0,64.000001"
+       orientation="0.70710678,0.70710678"
+       id="guide4286"
+       inkscape:label=""
+       inkscape:color="rgb(0,0,255)" />
+  </sodipodi:namedview>
+  <defs
+     id="defs4">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4278">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop4280" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop4282" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4178"
+       inkscape:collect="always">
+      <stop
+         id="stop4180"
+         offset="0"
+         style="stop-color:#9e00ff;stop-opacity:1;" />
+      <stop
+         id="stop4182"
+         offset="1"
+         style="stop-color:#8079ff;stop-opacity:1" />
+    </linearGradient>
+    <clipPath
+       id="clipPath6647"
+       clipPathUnits="userSpaceOnUse">
+      <rect
+         mask="none"
+         ry="8.0812111"
+         y="5.7220459e-006"
+         x="5.7220459e-006"
+         height="63.999989"
+         width="63.999989"
+         id="rect6649"
+         style="display:inline;opacity:1;fill:url(#linearGradient6651);fill-opacity:1;stroke:#00ff00;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </clipPath>
+    <linearGradient
+       y2="1052.182"
+       x2="64"
+       y1="988.41614"
+       x1="7.2204602e-007"
+       gradientTransform="translate(-1.1946838e-7,-988.36216)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient6651"
+       xlink:href="#linearGradient4178"
+       inkscape:collect="always" />
+    <linearGradient
+       gradientTransform="translate(1.373291e-6,988.36211)"
+       gradientUnits="userSpaceOnUse"
+       y2="32"
+       x2="64"
+       y1="32"
+       x1="7.2204602e-007"
+       id="linearGradient6665"
+       xlink:href="#linearGradient6659"
+       inkscape:collect="always" />
+    <linearGradient
+       id="linearGradient6659"
+       inkscape:collect="always">
+      <stop
+         id="stop6661"
+         offset="0"
+         style="stop-color:#7d00da;stop-opacity:1;" />
+      <stop
+         id="stop6663"
+         offset="1"
+         style="stop-color:#c600ff;stop-opacity:1" />
+    </linearGradient>
+    <clipPath
+       id="clipPath9257"
+       clipPathUnits="userSpaceOnUse">
+      <circle
+         r="31.999994"
+         cy="32.000023"
+         cx="32"
+         id="circle9259"
+         style="display:inline;opacity:1;fill:url(#linearGradient9261);fill-opacity:1;stroke:#00ff00;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </clipPath>
+    <linearGradient
+       y2="32"
+       x2="64"
+       y1="32"
+       x1="7.2204602e-007"
+       gradientTransform="translate(1.3051758e-6,-5.0297217e-5)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient9261"
+       xlink:href="#linearGradient6659"
+       inkscape:collect="always" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4278"
+       id="linearGradient4284"
+       x1="45.122326"
+       y1="45.122326"
+       x2="54.500565"
+       y2="54.500565"
+       gradientUnits="userSpaceOnUse" />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4291">
+      <circle
+         style="display:inline;opacity:1;fill:url(#linearGradient4295);fill-opacity:1;stroke:#00ff00;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="circle4293"
+         cx="32"
+         cy="32.000023"
+         r="31.999994" />
+    </clipPath>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6659"
+       id="linearGradient4295"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(1.373291e-6,-5e-5)"
+       x1="7.2204602e-007"
+       y1="32"
+       x2="64"
+       y2="32" />
+  </defs>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     style="display:inline"
+     transform="translate(0,-988.36216)"
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Background">
+    <circle
+       r="31.999994"
+       cy="1020.3622"
+       cx="32"
+       id="path6657"
+       style="display:inline;opacity:1;fill:url(#linearGradient6665);fill-opacity:1;stroke:#00ff00;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  </g>
+  <g
+     style="display:inline"
+     inkscape:label="Foreground"
+     id="layer2"
+     inkscape:groupmode="layer">
+    <path
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:medium;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans Bold';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:url(#linearGradient4284);fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;opacity:0.5"
+       d="M 27.683594 17.458984 L 16.941406 46.541016 L 87.652344 117.25195 L 95.210938 117.25195 L 97.222656 111.37305 L 104.13672 111.37305 L 110.01562 117.25195 L 117.76953 117.25195 L 107.02734 88.169922 L 36.316406 17.458984 L 27.683594 17.458984 z "
+       id="path4193"
+       clip-path="url(#clipPath4291)" />
+    <flowRoot
+       transform="translate(-0.27832031,-4.6608209)"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans Bold';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#f1ffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="flowRoot4148"
+       xml:space="preserve"><flowRegion
+         id="flowRegion4150"><rect
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Sans;-inkscape-font-specification:'Sans Bold';text-align:center;text-anchor:middle;fill:#f1ffff;fill-opacity:1"
+           y="9.8389959"
+           x="8.9156218"
+           height="51.87529"
+           width="46.764378"
+           id="rect4152" /></flowRegion><flowPara
+         id="flowPara4154">A</flowPara></flowRoot>  </g>
+</svg>
