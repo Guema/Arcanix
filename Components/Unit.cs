@@ -13,9 +13,9 @@ public class Unit : MonoBehaviour
     [SerializeField]
     bool isDied;
     [SerializeField]
-    MaxedInt health = new MaxedInt();
+    int health = 100;
     [SerializeField]
-    MaxedInt speed = new MaxedInt();
+    int speed = 100;
 
     // This function is called on Component Placement/Replacement
     void Reset()
@@ -43,6 +43,6 @@ public class Unit : MonoBehaviour
 
     public int GetSpeed()
     {
-        return speed.Value;
+        return speed;
     }
 }
