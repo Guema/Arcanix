@@ -7,7 +7,7 @@ using System.Collections;
 public class Unit : MonoBehaviour
 {    
     [SerializeField]
-    string faction;
+    string faction = "" ;
     [SerializeField]
     bool canNotDie;
     [SerializeField]
@@ -44,5 +44,10 @@ public class Unit : MonoBehaviour
     public int GetSpeed()
     {
         return speed;
+    }
+
+    public string GetFaction()
+    {
+        return faction;
     }
 }
