@@ -2,12 +2,10 @@ using UnityEngine;
 using System.Collections;
 using UnityEngine.Events;
 
+
 [RequireComponent(typeof(Unit))]
 public class PlayerController : Controller
 {
-
-    [SerializeField]
-    Unit unit;
     [SerializeField]
     new Rigidbody rigidbody;
     [SerializeField]
@@ -71,7 +69,7 @@ public class PlayerController : Controller
             }
         }
         direction.Normalize();
-        direction *= unit.GetSpeed() * Time.deltaTime / 15.0f;
+        //direction *= unit.GetSpeed() * Time.deltaTime / 15.0f;
         transform.position += direction;
     }
 
@@ -106,7 +104,9 @@ public class PlayerController : Controller
             }
         }
         direction.Normalize();
-        direction *= unit.GetSpeed() * Time.deltaTime;
+        //direction *= unit.GetSpeed() * Time.deltaTime;
         transform.position += direction;
     }
 }
+
+
