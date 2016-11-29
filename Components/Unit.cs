@@ -10,7 +10,9 @@ using UnityEngine.Events;
 public class Unit : MonoBehaviour
 {
     [SerializeField]
-    ClampedInt Health = new ClampedInt(0, 100, 100);
+    ClampedInt health = new ClampedInt(100, 0.5f);
+    [SerializeField]
+    Skill[] skills;
 
 
 

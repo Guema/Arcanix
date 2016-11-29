@@ -6,22 +6,26 @@ using System;
 public struct ClampedInt
 {
     [SerializeField]
-    private const int _min = 0;
+    private const int MIN = 0;
     [SerializeField]
     private int _max;
     [SerializeField]
     private int _val;
     /// <summary>
-    /// Create a Clamped value. limits and value are automatically chosen. 
+    /// Create a Clamped value. Max limit and value are chosen logically. 
     /// </summary>
     /// <param name="val1">value1</param>
     /// <param name="val2">value2</param>
-    /// <param name="val3">value3</param>
-    public ClampedInt(int val1, int val2, int val3)
+    public ClampedInt(int val1, int val2)
     {
-        //_min = val1 < val2 ? val1 < val3 ? val1 : val3 : val2 < val3 ? val2 : val3;
-        _max = val1 > val2 ? val1 > val3 ? val1 : val3 : val2 > val3 ? val2 : val3;
-        _val = val1 > val2 ? val1 < val3 ? val1 : val2 > val3 ? val2 : val3 : val1 > val3 ? val1 : val2 < val3 ? val2 : val3;
+        _max = val1 > val2 ? val1 > MIN ? val1 : MIN : val2 > MIN ? val2 : MIN;
+        _val = val1 < val2 ? val1 > MIN ? val1 : MIN : val2 > MIN ? val2 : MIN;
+    }
+
+    public ClampedInt(int max, float val_in_percent)
+    {
+        _max = max > MIN ? max : MIN;
+        _val = (int)((val_in_percent > 1f ? 1f : val_in_percent > 0f ? val_in_percent : 0f) * max);
     }
 
     /// <summary>
@@ -36,7 +40,7 @@ public struct ClampedInt
 
         set
         {
-            _max = value;
+            _max = value > MIN ? value : MIN ;
             Val = _val;
         }
     }
@@ -48,15 +52,8 @@ public struct ClampedInt
     {
         get
         {
-            return _min;
+            return MIN;
         }
-        /*
-        set
-        {
-            _min = value;
-            Val = _val;
-        }
-        */
     }
 
     /// <summary>
@@ -71,7 +68,7 @@ public struct ClampedInt
 
         set
         {
-            _val = value < _max ? value > _min ? value : _min : _max;
+            _val = value < _max ? value > MIN ? value : MIN : _max; 
         }
     }
         

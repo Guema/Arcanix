@@ -29,7 +29,7 @@ public class ArcanixEditor : Editor
 
                 list.drawHeaderCallback = (Rect rect) =>
                 {
-                    EditorGUI.LabelField(new Rect(rect.x, rect.y, rect.width, EditorGUIUtility.singleLineHeight), list.serializedProperty.name);
+                    EditorGUI.LabelField(new Rect(rect.x, rect.y, rect.width, EditorGUIUtility.singleLineHeight), list.serializedProperty.displayName);
                 };
             }
         }

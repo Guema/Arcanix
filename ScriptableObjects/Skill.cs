@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine.Events;
 
-public class Capacity : ScriptableObject
+public abstract class Skill : ScriptableObject
 {
 
 }

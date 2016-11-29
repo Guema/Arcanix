@@ -20,9 +20,6 @@ public class ArcanixScriptableInstancier : EditorWindow
     void OnGUI()
     {
         _monoscript = (MonoScript)EditorGUILayout.ObjectField(_monoscript, typeof(MonoScript), false);
-        EditorGUILayout.BeginHorizontal();
-        _assetName = EditorGUILayout.TextField("Name: ", _assetName);
-        EditorGUILayout.EndHorizontal();
 
         if (!_monoscript)
         {
@@ -39,15 +36,17 @@ public class ArcanixScriptableInstancier : EditorWindow
 
         if (!classOfScript.IsSubclassOf(typeof(ScriptableObject)))
         {
-            EditorGUILayout.HelpBox("You must enter a SerialisableObjet class file.", MessageType.Warning);
+            EditorGUILayout.HelpBox("You must enter a ScriptableObject class file.", MessageType.Error);
             return;
         }
 
-        EditorGUILayout.BeginVertical();
+        if (classOfScript.IsAbstract || classOfScript.IsInterface)
+        {
+            EditorGUILayout.HelpBox("This ScriptableObject is not instanciable (abstract).", MessageType.Error);
+            return;
+        }
 
-
-
-        EditorGUILayout.EndVertical();
+        _assetName = EditorGUILayout.TextField("Name: ", _assetName);
 
         if (GUILayout.Button("Instanciate"))
         {
