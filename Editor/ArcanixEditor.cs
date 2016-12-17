@@ -10,16 +10,19 @@ public class ArcanixEditor : Editor
     private void OnEnable()
     {
         _reorderableLists = new Dictionary<string, ReorderableList>();
+
         SerializedProperty iter = serializedObject.GetIterator();
+
         iter.Next(true);
+
         while (iter.NextVisible(false))
         {
-            Debug.Log(iter.propertyPath + " : "+ iter.propertyType);
-            var serializedProperty = serializedObject.FindProperty(iter.name);
-            if (serializedProperty.isArray)
+            //Debug.Log(iter.propertyPath + " : " + iter.propertyType);
+            if (iter.isArray)
             {
-                ReorderableList list = new ReorderableList(serializedObject, serializedProperty, true, true, true, true);
-                _reorderableLists.Add(serializedProperty.name, list);
+                ReorderableList list = new ReorderableList(iter.serializedObject, iter.Copy(), true, true, true, true);
+                _reorderableLists.Add(iter.propertyPath, list);
+
                 list.drawElementCallback = (Rect rect, int index, bool active, bool focused) =>
                 {
                     var element = list.serializedProperty.GetArrayElementAtIndex(index);
@@ -40,15 +43,17 @@ public class ArcanixEditor : Editor
         serializedObject.Update();
         var iter = serializedObject.GetIterator();
         iter.Next(true);
-        while (iter.NextVisible(false))
+        while (iter.NextVisible(iter.isExpanded))
         {
+            //Debug.Log(iter.propertyPath + " : " + iter.propertyType);
             if (iter.isArray)
             {
-                _reorderableLists[iter.name].DoLayoutList();
+                //Apply reorderable list layout for array elements
+                _reorderableLists[iter.propertyPath].DoLayoutList();
             }
             else
             {
-                if (iter.name != "m_Script")
+                if (iter.propertyPath != "m_Script")
                 {
                     EditorGUILayout.PropertyField(iter);
                 }

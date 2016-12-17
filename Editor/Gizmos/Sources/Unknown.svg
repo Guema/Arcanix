@@ -16,7 +16,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="Unit.svg">
+   sodipodi:docname="Unknown.svg">
   <defs
      id="defs4">
     <inkscape:path-effect
@@ -98,17 +98,20 @@
        r="256"
        cy="796.36218"
        cx="256" />
-    <ellipse
-       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:30;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="path4800"
-       cx="256"
-       cy="752.005"
-       rx="90.714279"
-       ry="91.071426" />
     <path
+       style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:30;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 154.24883,697.22265 c 4.00189,-24.64871 17.54903,-47.62205 37.18189,-63.05333 19.63287,-15.43129 45.15647,-23.16726 70.05286,-21.23238 27.95604,2.17267 54.77351,16.66775 71.73212,38.99859 16.95861,22.33083 23.71913,52.1572 17.83328,79.57284 -4.5953,21.40441 -16.70727,41.11751 -33.72482,54.88954 -17.01754,13.77204 -38.82275,21.50759 -60.71487,21.53903 l -1.21858,119.28571"
+       id="path4790"
+       inkscape:path-effect="#path-effect4792"
+       inkscape:original-d="m 154.24883,697.22265 c 0,0 6.09288,-89.28571 107.23475,-84.28571 101.14188,5 87.43929,65.83701 89.5654,118.57143 2.77054,68.71791 -94.43969,76.42857 -94.43969,76.42857 l -1.21858,119.28571"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="csscc" />
+    <rect
        style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:30;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 256 335.57227 A 166.42857 105 0 0 0 89.572266 440.57227 A 166.42857 105 0 0 0 90.640625 451.38867 A 256 256 0 0 0 256 512 A 256 256 0 0 0 421.61523 450.83594 A 166.42857 105 0 0 0 422.42773 440.57227 A 166.42857 105 0 0 0 256 335.57227 z "
-       transform="translate(0,540.36216)"
-       id="path4804" />
+       id="rect4794"
+       width="30"
+       height="30"
+       x="241"
+       y="955.93353" />
   </g>
 </svg>

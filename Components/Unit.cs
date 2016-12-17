@@ -1,41 +1,46 @@
 using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine.Events;
 
 [SelectionBase]
 [DisallowMultipleComponent]
-[ExecuteInEditMode]
 [AddComponentMenu("Arcanix/Unit")]
-public class Unit : MonoBehaviour
+[RequireComponent(typeof(CapsuleCollider))]
+public sealed class Unit : MonoBehaviour
 {
     [SerializeField]
-    ClampedInt health = new ClampedInt(100, 0.5f);
+    ClampedInt health = new ClampedInt(100, 1f);
+    
     [SerializeField]
     Skill[] skills;
 
-
+    [SerializeField]
+    public Vector3 SkillShotAnchor // Provisoir
+    {
+        get
+        {
+            return transform.position + Vector3.forward + Vector3.up;
+        }
+    }
 
     // This function is called on Component Placement/Replacement
     void Reset()
     {
-        
+
     }
 
-    // Use this for initialization
-    void Start()
+    public void UseSkillShot(SkillShot skill)
     {
+        foreach(var each in skills)
+        {
 
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnMouseDrag()
     {
-        
+        Debug.Log("Lol");
     }
 
-    //Called every frame in editor
-    void OnDrawGizmos()
+    private void OnValidate()
     {
 
     }

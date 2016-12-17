@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEditor;
 
+
 [CustomPropertyDrawer(typeof(ClampedInt))]
 public class ClampedIntDrawer : PropertyDrawer
 {
@@ -19,6 +20,8 @@ public class ClampedIntDrawer : PropertyDrawer
     {
         EditorGUI.BeginProperty(position, label, property);
 
+        property.isExpanded = false;
+
         var numberfield = new Rect(position.x, position.y, position.width * 4 / 5, position.height);
         var sliderfield = new Rect(position.x + numberfield.width + 5, position.y, position.width / 5 - 5, position.height);
         
@@ -28,5 +31,10 @@ public class ClampedIntDrawer : PropertyDrawer
         EditorGUI.ProgressBar(sliderfield, property.FindPropertyRelative("_val").intValue / (float)property.FindPropertyRelative("_max").intValue, percent);
 
         EditorGUI.EndProperty();
+    }
+
+    public override float GetPropertyHeight(SerializedProperty property, GUIContent label)
+    {
+        return EditorGUIUtility.singleLineHeight;
     }
 }

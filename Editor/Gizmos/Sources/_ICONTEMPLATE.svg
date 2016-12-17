@@ -10,123 +10,60 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="64"
-   height="64"
-   viewBox="0 0 64.000001 64.000001"
+   width="512"
+   height="512"
+   viewBox="0 0 512.00001 512.00001"
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="_ICONTEMPLATE.svg"
-   inkscape:export-filename="C:\Users\Florent\Pictures\ImageWorkSpace\Unity - Arcanix\Unit.png"
-   inkscape:export-xdpi="90"
-   inkscape:export-ydpi="90">
+   sodipodi:docname="_ICONTEMPLATE.svg">
+  <defs
+     id="defs4">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4736">
+      <stop
+         style="stop-color:#734f96;stop-opacity:1;"
+         offset="0"
+         id="stop4738" />
+      <stop
+         style="stop-color:#ff66c3;stop-opacity:1"
+         offset="1"
+         id="stop4740" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4736"
+       id="linearGradient4742"
+       x1="256"
+       y1="796.36218"
+       x2="512"
+       y2="540.36218"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
   <sodipodi:namedview
-     inkscape:snap-page="true"
-     inkscape:snap-midpoints="true"
-     inkscape:snap-smooth-nodes="true"
-     inkscape:object-nodes="true"
-     inkscape:snap-intersection-paths="true"
-     inkscape:object-paths="true"
-     inkscape:guide-bbox="true"
-     showguides="true"
      id="base"
      pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="7.7339804"
-     inkscape:cx="19.457701"
-     inkscape:cy="17.282134"
+     inkscape:zoom="1.4"
+     inkscape:cx="177.22654"
+     inkscape:cy="210.07038"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
-     showgrid="true"
+     showgrid="false"
      units="px"
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-center="true"
+     inkscape:snap-page="true"
+     inkscape:snap-midpoints="true"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1" />
-  <defs
-     id="defs4">
-    <linearGradient
-       inkscape:collect="always"
-       id="linearGradient4178">
-      <stop
-         style="stop-color:#9e00ff;stop-opacity:1;"
-         offset="0"
-         id="stop4180" />
-      <stop
-         style="stop-color:#8079ff;stop-opacity:1"
-         offset="1"
-         id="stop4182" />
-    </linearGradient>
-    <clipPath
-       clipPathUnits="userSpaceOnUse"
-       id="clipPath6647">
-      <rect
-         style="display:inline;opacity:1;fill:url(#linearGradient6651);fill-opacity:1;stroke:#00ff00;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="rect6649"
-         width="63.999989"
-         height="63.999989"
-         x="5.7220459e-006"
-         y="5.7220459e-006"
-         ry="8.0812111"
-         mask="none" />
-    </clipPath>
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient4178"
-       id="linearGradient6651"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="translate(-1.1946838e-7,-988.36216)"
-       x1="7.2204602e-007"
-       y1="988.41614"
-       x2="64"
-       y2="1052.182" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient6659"
-       id="linearGradient6665"
-       x1="7.2204602e-007"
-       y1="32"
-       x2="64"
-       y2="32"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="translate(1.373291e-6,988.36211)" />
-    <linearGradient
-       inkscape:collect="always"
-       id="linearGradient6659">
-      <stop
-         style="stop-color:#7d00da;stop-opacity:1;"
-         offset="0"
-         id="stop6661" />
-      <stop
-         style="stop-color:#c600ff;stop-opacity:1"
-         offset="1"
-         id="stop6663" />
-    </linearGradient>
-    <clipPath
-       clipPathUnits="userSpaceOnUse"
-       id="clipPath9257">
-      <circle
-         style="display:inline;opacity:1;fill:url(#linearGradient9261);fill-opacity:1;stroke:#00ff00;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="circle9259"
-         cx="32"
-         cy="32.000023"
-         r="31.999994" />
-    </clipPath>
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient6659"
-       id="linearGradient9261"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="translate(1.3051758e-6,-5.0297217e-5)"
-       x1="7.2204602e-007"
-       y1="32"
-       x2="64"
-       y2="32" />
-  </defs>
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -140,21 +77,15 @@
     </rdf:RDF>
   </metadata>
   <g
-     inkscape:label="Background"
+     inkscape:label="Calque 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-988.36216)"
-     style="display:inline">
+     transform="translate(0,-540.36216)">
     <circle
-       style="display:inline;opacity:1;fill:url(#linearGradient6665);fill-opacity:1;stroke:#00ff00;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="path6657"
-       cx="32"
-       cy="1020.3622"
-       r="31.999994" />
+       style="fill:url(#linearGradient4742);fill-opacity:1;stroke:none;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path4686"
+       r="256"
+       cy="796.36218"
+       cx="256" />
   </g>
-  <g
-     inkscape:groupmode="layer"
-     id="layer2"
-     inkscape:label="Foreground"
-     style="display:inline" />
 </svg>
