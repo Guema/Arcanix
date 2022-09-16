@@ -14,8 +14,8 @@
     "versionDefines": [
         {
             "name": "com.dbrizov.naughtyattributes",
-            "expression": "",
-            "define": "2.1.4"
+            "expression": "2.1.4",
+            "define": "NAUGHTY_ATTRIBUTES"
         }
     ],
     "noEngineReferences": false
