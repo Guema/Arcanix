@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.AI;
 using NaughtyAttributes;
 
 
@@ -15,6 +16,14 @@ namespace Arcanix
 #if UNITY_EDITOR
         void Reset() => Init();
 #endif
+        public struct ControllerType
+        {
+            Rigidbody rigidbody;
+            Rigidbody2D rigidbody2D;
+            NavMeshAgent navMeshAgent;
+            CharacterController characterController;
+
+        }
 
         void Init()
         {
