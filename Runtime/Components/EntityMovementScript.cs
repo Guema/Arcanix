@@ -53,10 +53,11 @@ namespace Arcanix
 
         #endregion
 
-        [ShowNonSerializedField] Rigidbody _rigidBody;
-        [SerializeField] bool _localSpace = true;
-        [SerializeField, Dropdown(nameof(AXIS_LIST))] MovementAxis _movementAxis = MovementAxis.XZ;
-        [SerializeField] float power = 3f;
+        [SerializeField] string Name;
+        [ShowNonSerializedField, BoxGroup] Rigidbody _rigidBody;
+        [SerializeField, BoxGroup] bool _localSpace = true;
+        [SerializeField, Dropdown(nameof(AXIS_LIST)), BoxGroup] MovementAxis _movementAxis = MovementAxis.XZ;
+        [SerializeField, BoxGroup] float power = 3f;
 
 
         Coroutine _currentMovement;

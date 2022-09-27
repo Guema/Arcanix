@@ -21,10 +21,8 @@ namespace Arcanix
             public EntityMovementScript _entityMovementScript;
         }
 
-
         [SerializeField, BoxGroup]
         List<InputLink> _inputConnectionList = new List<InputLink>();
-
 
         private void OnEnable()
         {
@@ -54,7 +52,6 @@ namespace Arcanix
             else if (ctx.valueType == typeof(float))
                 _inputConnectionList.First(link => link._inputActionReference.action == ctx.action)
                     ._entityMovementScript.Perform(ctx.ReadValue<float>());
-
         }
 
     }
