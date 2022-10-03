@@ -1,7 +1,6 @@
 using UnityEngine;
 using System;
 using System.Numerics;
-using NaughtyAttributes;
 
 
 public struct ClampedValue<T> where T : IComparable<T>, IConvertible, IEquatable<T>, IFormattable

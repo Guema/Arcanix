@@ -1,10 +1,11 @@
-using NaughtyAttributes;
+using Toolbox;
 using System.Collections.Generic;
 using System.Collections;
 using UnityEngine;
 
 namespace Arcanix
 {
+    [Icon("Packages/com.guema.arcanix/Gizmos/Generic icon.png")]
     [AddComponentMenu("Arcanix/Entity Movement")]
     [RequireComponent(typeof(UnitScript))]
     [Tooltip("Entity movement define a movement ability for a ?gameobject?")]
@@ -14,29 +15,38 @@ namespace Arcanix
 
         public enum MovementAxis
         {
+            [InspectorName("X (Bool)")]
             X,
+            [InspectorName("Y (Bool)")]
             Y,
+            [InspectorName("Z (Bool)")]
             Z,
+            [InspectorName("XY (Vector2)")]
             XY,
+            [InspectorName("XZ (Vector2)")]
             XZ,
+            [InspectorName("YX (Vector2)")]
             YX,
+            [InspectorName("YZ (Vector2)")]
             YZ,
+            [InspectorName("ZX (Vector2)")]
             ZX,
+            [InspectorName("ZY (Vector2)")]
             ZY
         }
 
-        static readonly DropdownList<MovementAxis> AXIS_LIST = new DropdownList<MovementAxis>
-        {
-            {"X (bool)", MovementAxis.X },
-            {"Y (bool)", MovementAxis.Y },
-            {"Z (bool)", MovementAxis.Z },
-            {"XY (Vector2)", MovementAxis.XY },
-            {"XZ (Vector2)", MovementAxis.XZ },
-            {"YX (Vector2)", MovementAxis.YX },
-            {"YZ (Vector2)", MovementAxis.YZ },
-            {"ZX (Vector2)", MovementAxis.ZX },
-            {"ZY (Vector2)", MovementAxis.ZY }
-        };
+        // static readonly DropdownList<MovementAxis> AXIS_LIST = new DropdownList<MovementAxis>
+        // {
+        //     {"X (bool)", MovementAxis.X },
+        //     {"Y (bool)", MovementAxis.Y },
+        //     {"Z (bool)", MovementAxis.Z },
+        //     {"XY (Vector2)", MovementAxis.XY },
+        //     {"XZ (Vector2)", MovementAxis.XZ },
+        //     {"YX (Vector2)", MovementAxis.YX },
+        //     {"YZ (Vector2)", MovementAxis.YZ },
+        //     {"ZX (Vector2)", MovementAxis.ZX },
+        //     {"ZY (Vector2)", MovementAxis.ZY }
+        // };
 
         static readonly Dictionary<MovementAxis, (Vector3Int, Vector3Int)> AXIS_VECTORS = new Dictionary<MovementAxis, (Vector3Int, Vector3Int)>
         {
@@ -53,12 +63,10 @@ namespace Arcanix
 
         #endregion
 
-        [SerializeField] string Name;
-        [ShowNonSerializedField, BoxGroup] Rigidbody _rigidBody;
-        [SerializeField, BoxGroup] bool _localSpace = true;
-        [SerializeField, Dropdown(nameof(AXIS_LIST)), BoxGroup] MovementAxis _movementAxis = MovementAxis.XZ;
-        [SerializeField, BoxGroup] float power = 3f;
-
+        Rigidbody _rigidBody;
+        [SerializeField] bool _localSpace = true;
+        [SerializeField] MovementAxis _movementAxis = MovementAxis.XZ;
+        [SerializeField] float power = 3f;
 
         Coroutine _currentMovement;
         Vector3 _input = Vector3.zero;

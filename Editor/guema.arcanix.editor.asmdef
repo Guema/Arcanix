@@ -1,9 +1,9 @@
 {
     "name": "guema.arcanix.editor",
-    "rootNamespace": "ArcanixEditor",
+    "rootNamespace": "Arcanix.Editor",
     "references": [
-        "NaughtyAttributes.Core",
-        "NaughtyAttributes.Editor"
+        "Toolbox",
+        "Toolbox.Editor"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
@@ -12,12 +12,6 @@
     "precompiledReferences": [],
     "autoReferenced": true,
     "defineConstraints": [],
-    "versionDefines": [
-        {
-            "name": "com.dbrizov.naughtyattributes",
-            "expression": "",
-            "define": "2.1.4"
-        }
-    ],
+    "versionDefines": [],
     "noEngineReferences": false
 }

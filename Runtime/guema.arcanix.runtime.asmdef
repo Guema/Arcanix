@@ -2,8 +2,8 @@
     "name": "guema.arcanix.runtime",
     "rootNamespace": "Arcanix",
     "references": [
-        "NaughtyAttributes.Core",
-        "Unity.InputSystem"
+        "Unity.InputSystem",
+        "Toolbox"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
@@ -12,12 +12,6 @@
     "precompiledReferences": [],
     "autoReferenced": true,
     "defineConstraints": [],
-    "versionDefines": [
-        {
-            "name": "com.dbrizov.naughtyattributes",
-            "expression": "2.1.4",
-            "define": "NAUGHTY_ATTRIBUTES"
-        }
-    ],
+    "versionDefines": [],
     "noEngineReferences": false
 }

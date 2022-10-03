@@ -1,15 +1,16 @@
 using UnityEngine;
 using UnityEngine.AI;
-using NaughtyAttributes;
 
 
 namespace Arcanix
 {
+    [Icon("Packages/com.guema.arcanix/Gizmos/AIControllerScript icon.png")]
     [RequireComponent(typeof(UnitScript))]
     [DisallowMultipleComponent]
     public abstract class ControllerScript : MonoBehaviour, IUnit
     {
-        [SerializeField, ReadOnly, BoxGroup]
+        [BeginGroup, EndGroup]
+        [SerializeField, Disable]
         protected UnitScript _unit;
         UnitScript IUnit.unit => _unit;
 

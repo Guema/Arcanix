@@ -4,6 +4,7 @@ using UnityEngine;
 
 namespace Arcanix
 {
+    [Icon("Packages/com.guema.arcanix/Gizmos/AnimatorControllerScript icon.png")]
     [AddComponentMenu("Arcanix/Animator Controller")]
     public class AnimatorControllerScript : MonoBehaviour
     {
