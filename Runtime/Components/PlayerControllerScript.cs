@@ -15,24 +15,33 @@ namespace Arcanix
         [System.Serializable]
         private class InputLink
         {
-            [SerializeField, HideLabel]
-            public InputActionReference _inputActionReference;
-            [SerializeField, HideLabel, InLineEditor(false, true)]
-            public EntityMovementScript _entityMovementScript;
-            [SerializeField]
-            public (Object, Object) test;
+            [SerializeField, HideLabel, BeginHorizontal]
+            private InputActionReference _inputActionReference;
+            [SerializeField, HideLabel, InLineEditor(false, true), EndHorizontal]
+            private EntityMovement _entityMovement;
 
+            public InputActionReference inputActionReference => _inputActionReference;
+            public EntityMovement entityMovement => _entityMovement;
         }
-
-        [SerializeField, ReorderableList(ListStyle.Boxed, elementLabel: "", Foldable = false)]
+        [SerializeField] CharacterController _characterController;
+        [SerializeField, ReorderableList(ListStyle.Lined, elementLabel: "", Foldable = false)]
         List<InputLink> _inputConnectionList = new List<InputLink>();
+
+
+#if UNITY_EDITOR
+        void Reset() => Init();
+#endif
+        void Init()
+        {
+            _characterController = GetComponent<CharacterController>();
+        }
 
         private void OnEnable()
         {
             _inputConnectionList.ForEach(link =>
             {
-                link._inputActionReference.action.performed += Propagate;
-                link._inputActionReference.action.canceled += Propagate;
+                link.inputActionReference.action.performed += Perform;
+                link.inputActionReference.action.canceled += Perform;
             });
 
         }
@@ -41,21 +50,19 @@ namespace Arcanix
         {
             _inputConnectionList.ForEach(link =>
             {
-                link._inputActionReference.action.performed -= Propagate;
-                link._inputActionReference.action.canceled -= Propagate;
+                link.inputActionReference.action.performed -= Perform;
+                link.inputActionReference.action.canceled -= Perform;
             });
         }
 
-        private void Propagate(InputAction.CallbackContext ctx)
+        private void Perform(InputAction.CallbackContext ctx)
         {
 
-            if (ctx.valueType == typeof(Vector2))
-                _inputConnectionList.First(link => link._inputActionReference.action == ctx.action)
-                    ._entityMovementScript.Perform(ctx.ReadValue<Vector2>());
-            else if (ctx.valueType == typeof(float))
-                _inputConnectionList.First(link => link._inputActionReference.action == ctx.action)
-                    ._entityMovementScript.Perform(ctx.ReadValue<float>());
+
+            var inputLink = _inputConnectionList.First(e => e.inputActionReference.action == ctx.action);
+            inputLink.entityMovement.ComputeMovement(this, inputLink.inputActionReference.action.ReadValue<Vector2>());
         }
+
 
     }
 
