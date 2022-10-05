@@ -15,17 +15,23 @@ namespace Arcanix
         [System.Serializable]
         private class InputLink
         {
-            [SerializeField, HideLabel, BeginHorizontal]
+            [SerializeField, HideLabel]
             private InputActionReference _inputActionReference;
-            [SerializeField, HideLabel, InLineEditor(false, true), EndHorizontal]
+            [SerializeField, HideLabel, InLineEditor(false, true)]
             private EntityMovement _entityMovement;
 
             public InputActionReference inputActionReference => _inputActionReference;
             public EntityMovement entityMovement => _entityMovement;
         }
+
+
+
+
         [SerializeField] CharacterController _characterController;
+        [SerializeField] bool _useGravity = true;
         [SerializeField, ReorderableList(ListStyle.Lined, elementLabel: "", Foldable = false)]
         List<InputLink> _inputConnectionList = new List<InputLink>();
+
 
 
 #if UNITY_EDITOR
@@ -60,7 +66,20 @@ namespace Arcanix
 
 
             var inputLink = _inputConnectionList.First(e => e.inputActionReference.action == ctx.action);
-            inputLink.entityMovement.ComputeMovement(this, inputLink.inputActionReference.action.ReadValue<Vector2>());
+            var movement = inputLink.entityMovement.ComputeMovement(this, inputLink.inputActionReference.action.ReadValue<Vector2>());
+
+            IEnumerator Move()
+            {
+                while (true)
+                {
+
+                    yield return NonAllocYieldInstructions.WaitForFixedUpdate;
+                }
+
+            }
+
+
+
         }
 
 

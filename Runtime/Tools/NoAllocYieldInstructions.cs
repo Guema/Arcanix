@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Arcanix
 {
-    static class NonAllocYieldInstructions
+    public static class NonAllocYieldInstructions
     {
         static public WaitForEndOfFrame WaitForEndOfFrame
         {

@@ -54,7 +54,6 @@ namespace Arcanix
 
         Rigidbody _rigidBody;
         [SerializeField] bool _localSpace = true;
-        [SerializeField] bool _isConstant = false;
         [SerializeField] MovementAxis _movementAxis = MovementAxis.XZ;
         [SerializeField] float _power = 3f;
 
