@@ -9,8 +9,7 @@ namespace Arcanix
     [DisallowMultipleComponent]
     public abstract class ControllerScript : MonoBehaviour, IUnit
     {
-        [BeginGroup, EndGroup]
-        [SerializeField, Disable]
+        [SerializeField]
         protected UnitScript _unit;
         UnitScript IUnit.unit => _unit;
 

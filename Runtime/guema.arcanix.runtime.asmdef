@@ -3,7 +3,7 @@
     "rootNamespace": "Arcanix",
     "references": [
         "Unity.InputSystem",
-        "Toolbox"
+        "MarkupAttributes.Runtime"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

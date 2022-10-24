@@ -15,9 +15,9 @@ namespace Arcanix
         [System.Serializable]
         private class InputLink
         {
-            [SerializeField, HideLabel]
+            [SerializeField]
             private InputActionReference _inputActionReference;
-            [SerializeField, HideLabel, InLineEditor(false, true)]
+            [SerializeField]
             private EntityMovement _entityMovement;
 
             public InputActionReference inputActionReference => _inputActionReference;
@@ -29,7 +29,7 @@ namespace Arcanix
 
         [SerializeField] CharacterController _characterController;
         [SerializeField] bool _useGravity = true;
-        [SerializeField, ReorderableList(ListStyle.Lined, elementLabel: "", Foldable = false)]
+        [SerializeField]
         List<InputLink> _inputConnectionList = new List<InputLink>();
 
 
